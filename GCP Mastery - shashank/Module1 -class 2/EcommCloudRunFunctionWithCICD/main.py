@@ -22,7 +22,7 @@ def order_event(request):
     HTTP Cloud Run Function to handle 'order.created' events.
     Expects a rich JSON payload (see utils/order_utils.validate_payload).
     """
-    # test comment
+    # test 
     logger.info("Received %s %s", request.method, request.path)
     if request.method != "POST":
         logger.warning("Only POST allowed")
